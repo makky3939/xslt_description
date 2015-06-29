@@ -1,0 +1,17 @@
+body {
+  font-family: 'ヒラギノ明朝 Pro W3', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+}
+
+blockquote {
+  margin: 4em 0;
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+.shuffle {
+  margin: 2em 0;
+}
+
+.footer-content {
+  margin: 2em 0;
+}

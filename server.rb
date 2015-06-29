@@ -2,7 +2,7 @@ require 'webrick'
 
 module WEBrick
   module HTTPServlet
-    FileHandler.add_handler('rb', CGIHandler)
+    FileHandler.add_handler('cgi', CGIHandler)
   end
 end
 
