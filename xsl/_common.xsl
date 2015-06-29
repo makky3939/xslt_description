@@ -20,6 +20,9 @@
           <xsl:value-of select='books/metadata/title' />
         </a>
       </h1>
+      <p class='text-center'>
+        <xsl:value-of select='books/metadata/description' />
+      </p>
       <hr />
     </div>
   </header>
@@ -48,6 +51,16 @@
   </footer>
   <script src='/js/jquery-2.1.4.min.js'></script>
   <script src='/js/bootstrap.min.js'></script>
+</xsl:template>
+
+<xsl:template name='common_shuffle'>
+  <div class='col-xs-12 text-center shuffle'>
+    <div class='row'>
+      <a class='btn btn-default btn-block btn-lg' href='/'>
+        他の紹介文を読む
+      </a>
+    </div>
+  </div>
 </xsl:template>
 
 </xsl:stylesheet>

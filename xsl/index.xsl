@@ -14,13 +14,22 @@
       <div class='container'>
         <div class='col-sm-6 col-sm-offset-3'>
           <div class='row'>
+            <div class='alert alert-info'>
+              <p class='text-center'>
+                図書の概要のみをランダムで表示します。
+                <br />
+                気になる本があれば
+                <code>
+                  この本を読む
+                </code>
+                を選択してください。
+              </p>
+            </div>
+          </div>
+          <div class='row'>
             <xsl:apply-templates select='books/item' />
           </div>
-          <div class='col-xs-12 text-center shuffle'>
-            <a class='btn btn-default btn-block btn-lg' href='/'>
-              他を見る
-            </a>
-          </div>
+          <xsl:call-template name='common_shuffle' />
         </div>
       </div>
       <xsl:call-template name='common_footer' />
@@ -31,7 +40,7 @@
 <xsl:template match='item'>
   <xsl:variable name="max" select="count(/books/item)" />
   <xsl:if test="position() &lt; ($random mod $max) + 8 and position() &gt; ($random mod $max)">
-    <blockquote>
+    <blockquote class='description'>
       <p>
         <xsl:value-of select='substring(description, 0, 140)' />
         <xsl:if test="string-length(description) &gt; 140">
