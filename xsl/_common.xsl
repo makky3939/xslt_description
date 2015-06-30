@@ -7,8 +7,8 @@
     <meta charset='utf-8' />
     <title><xsl:value-of select='books/metadata/title' /></title>
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
-    <link href='/css/bootstrap.min.css' rel='stylesheet' />
-    <link href='/css/style.css' rel='stylesheet' />
+    <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
   </head>
 </xsl:template>
 
@@ -16,7 +16,7 @@
   <header class='container'>
     <div class='col-sm-8 col-sm-offset-2'>
       <h1 class='text-center'>
-        <a href='/'>
+        <a href=''>
           <xsl:value-of select='books/metadata/title' />
         </a>
       </h1>
@@ -49,8 +49,8 @@
       </p>
     </div>
   </footer>
-  <script src='/js/jquery-2.1.4.min.js'></script>
-  <script src='/js/bootstrap.min.js'></script>
+  <script src='js/jquery-2.1.4.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
 </xsl:template>
 
 <xsl:template name='common_shuffle'>
