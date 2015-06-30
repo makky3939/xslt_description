@@ -16,7 +16,7 @@
   <header class='container'>
     <div class='col-sm-8 col-sm-offset-2'>
       <h1 class='text-center'>
-        <a href=''>
+        <a href='index.cgi'>
           <xsl:value-of select='books/metadata/title' />
         </a>
       </h1>
@@ -56,7 +56,7 @@
 <xsl:template name='common_shuffle'>
   <div class='col-xs-12 text-center shuffle'>
     <div class='row'>
-      <a class='btn btn-default btn-block btn-lg' href='/'>
+      <a class='btn btn-default btn-block btn-lg' href='index.cgi'>
         他の紹介文を読む
       </a>
     </div>
